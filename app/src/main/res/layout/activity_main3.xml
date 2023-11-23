@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity3">
+
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="340dp"
+        android:layout_height="60dp" />
+
+    <ImageView
+        android:id="@+id/User"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/user"
+        android:layout_toRightOf="@id/search"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/trending"
+        android:layout_width="130dp"
+        android:layout_height="38dp"
+        android:background="#7393B3"
+        android:text="TRENDING"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/search"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/action"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#EDEADE"
+        android:text="Action"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:layout_toRightOf="@id/trending"
+        android:layout_below="@id/search"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/comedy"
+        android:layout_width="97dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#EDEADE"
+        android:text="Comedy"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:layout_toRightOf="@id/action"
+        android:layout_below="@id/search"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/OnePiece"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/action"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:text="ONE PIECE"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+
+    <ImageView
+        android:id="@+id/imageOnePiece"
+        android:layout_width="330dp"
+        android:layout_height="210dp"
+        app:srcCompat="@drawable/img"
+        android:layout_below="@id/OnePiece"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        />
+
+    <TextView
+        android:id="@+id/watch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch now!"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageOnePiece"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overview:"
+        android:layout_below="@id/imageOnePiece"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/View"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:text="      With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure in this live-action adaptation of the popular manga."
+        android:layout_below="@id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Released:"
+        android:layout_below="@id/View"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2023-08-31"
+        android:layout_below="@id/release"
+        android:paddingHorizontal="50dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genre:"
+        android:layout_below="@id/date"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Action, Adventure, Sci-Fi,  Fantasy"
+        android:layout_below="@id/textView11"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6C95C6"
+        android:text="More"
+        android:layout_below="@id/textView12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+
+        android:layout_below="@+id/OnePiece"
+        android:layout_alignStart="@+id/imageOnePiece"
+        android:layout_alignEnd="@+id/imageOnePiece"
+        android:layout_alignBottom="@+id/imageOnePiece"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="76dp"
+        app:srcCompat="@drawable/baseline_play_circle_outline_24" />
+
+
+</RelativeLayout>
